@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    border-radius: 5px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    color: #666;
+}
+.container{
+    display: flex;
+    gap: 15px;
+    margin: 20px 10px;
+    background-color: #141414;
+    padding: 10px;
+}
+
+.main-video-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+background-image: url(/playlist_videos/img/02.mp4);
+    box-shadow: 0 1px 2px #fff;
+    color: #fff;
+    font-weight: 600;
+}
+
+.main-video-content video{
+    width: 600px;
+}
+.playlist{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+    max-height: 400px;
+    padding: 2px;
+}
+.playlist::-webkit-scrollbar{
+    width: 6px;
+}
+.playlist::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #666666;
+}
+.playlist-video{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    box-shadow: 0 1px 2px #6666;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.active{
+    background-color: #fff;
+    color: #000;
+}
+.playlist-video video{
+    width: 100px;
+}
+@media (max-width: 900px) {
+    .container{
+        flex-direction: column;
+        margin-top: 60px;
+        /*coloque uma heiht dps/*/
+    }
+    .container,.main-video-content video{
+        width: 100%;
+    }
+}
+
+
+
+
